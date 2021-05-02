@@ -33,6 +33,7 @@ def zig_one_zag():
     move()
     turn_left()
 
+
 def turn_right():
     for i in range(3):
         turn_left()
