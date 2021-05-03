@@ -9,17 +9,17 @@ Karel will climb three stair steps up and then three stair steps down.
 def main():
     climb_mountain()
     raise_flag()
-
+    climb_down()
 
 
 def climb_mountain():
     # preconditon: karel is at the bottom of the countain
-
     while front_is_blocked():
         step_up()
-def come_down():
-    while front_is_clear():
 
+def climb_down():
+    while front_is_clear():
+        step_down()
 
 def step_up():
     # karel must be facing east
