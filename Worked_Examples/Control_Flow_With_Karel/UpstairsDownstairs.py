@@ -8,12 +8,17 @@ Karel will climb three stair steps up and then three stair steps down.
 
 def main():
     climb_mountain()
+    raise_flag()
 
 
 
 def climb_mountain():
+    # preconditon: karel is at the bottom of the countain
+
     while front_is_blocked():
         step_up()
+def come_down():
+    while front_is_clear():
 
 
 def step_up():
@@ -23,6 +28,18 @@ def step_up():
     turn_right()
     move()
 
+def step_down():
+    # going down
+    # pre: karel is on the top of the mountain
+    # post: karel will go down
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+def raise_flag():
+    # putting a beeper as a flag
+    put_beeper()
 
 def turn_right():
     for _ in range(3):
