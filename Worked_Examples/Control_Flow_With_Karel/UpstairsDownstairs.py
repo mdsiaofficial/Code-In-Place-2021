@@ -14,7 +14,7 @@ def main():
 def climb_mountain():
     while front_is_blocked():
         step_up()
-        step_up()
+
 
 def step_up():
     # karel must be facing east
