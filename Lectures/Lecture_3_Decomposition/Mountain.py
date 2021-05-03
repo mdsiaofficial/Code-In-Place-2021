@@ -43,4 +43,4 @@ def turn_right():
         turn_left()
 
 if __name__ == '__main__':
-    run_karel_program('Mountain3.w')
+    run_karel_program('Mountain1.w')
