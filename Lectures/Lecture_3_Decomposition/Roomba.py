@@ -59,4 +59,4 @@ def turn_right():
         turn_left()
 
 if __name__ == "__main__":
-    run_karel_program('Roomba2.w')
+    run_karel_program('Roomba1.w')
