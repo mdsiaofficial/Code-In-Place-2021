@@ -12,7 +12,6 @@ def main():
         clear_row()
         # karel is facing east in the next row
         # return_to_first_col()
-
         next_row()
 
     clear_row()
