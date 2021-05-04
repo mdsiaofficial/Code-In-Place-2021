@@ -30,6 +30,8 @@ def ascend_mountain():
     while front_is_blocked():
         step_up()
 
+
+
 def step_up():
     turn_left()
     move()
