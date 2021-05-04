@@ -48,10 +48,11 @@ def move_to_wall():
 def turn_around():
     turn_left()
     turn_left()
+"""    
 def return_to_first_col():
     turn_around()
     move_to_wall()
-
+"""
 # Recall, not an ambi turner
 def turn_right():
     for i in range(3):
