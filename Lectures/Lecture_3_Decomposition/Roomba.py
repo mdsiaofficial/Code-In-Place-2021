@@ -10,8 +10,10 @@ def main():
     while left_is_clear():
         move_to_wall()
         clear_row()
+        """
         # karel is facing east in the next row
         # return_to_first_col()
+        """
         next_row()
     clear_row()
 
