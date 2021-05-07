@@ -5,7 +5,9 @@
 #import here
 import random
 def main():
-    print(random.randint(5,25))
+
+    print(random.seed())
+
 
 
 
