@@ -6,6 +6,7 @@ Dennis Ritchie's classic book, 'The C Programming Language.')
 """
 
 def main():
+    print("Hello world")
 
 
 # This provided line is required at the end of a Python file
