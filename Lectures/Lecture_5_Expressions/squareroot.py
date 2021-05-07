@@ -4,7 +4,7 @@ This program computes square roots
 """
 
 #import here
-import math *
+import math
 def main():
     num = int(input("Enter a number: ")
     print(math.sqrt(num))
