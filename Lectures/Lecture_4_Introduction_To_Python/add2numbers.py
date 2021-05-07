@@ -4,12 +4,10 @@ This program asks the user for two integers and prints their sum.
 """
 
 def main():
-
-    print('Hello there')
-    ## user_input = input('Whats you name?')
-    ## print('Hi, ' + user_input)
-    x = 42
-    print(x/2)
+    x = input('Gimme your first number: ')
+    y = input('Gimme your second number: ')
+    add2numbers = int(x)+int(y)
+    print(add2numbers)
 # This provided line is required at the end of a Python file
 # to call the main() function.
 if __name__ == '__main__':
