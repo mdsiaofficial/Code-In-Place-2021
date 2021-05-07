@@ -3,8 +3,7 @@ average2numbers
 This program asks the user for two numbers and prints their average.
 """
 
-#import here
-import
+
 def main():
     first_number = input('Gimme 1st number: ')
     second_number = input('Gimme 2nd number: ')
