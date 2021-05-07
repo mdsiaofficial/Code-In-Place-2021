@@ -6,7 +6,7 @@
 import random
 def main():
 
-    print(random.seed())
+    print(random.seed(x))
 
 
 
