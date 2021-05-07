@@ -4,7 +4,7 @@
 
 # Number of sides on each die to roll
 NUM_SIDES = 6
-
+import random
 def main():
     # setting seed is useful for debugging
     # random.seed(1)
