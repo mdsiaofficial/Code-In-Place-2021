@@ -18,9 +18,7 @@ def main():
     while correct_count !=cmplt_prgrm:
         if user_input==sum and correct_count<cmplt_prgrm:
             print("Correct!")
-            correct_count+=1
-            print("What is " + str(num1) + "+" + str(num2) + "?")
-            user_input = int(input("Your answer: "))
+            correct_count += 1
         else:
             print("Incorrect. The expected answer is "+str(sum))
             print("What is " + str(num1) + "+" + str(num2) + "?")
