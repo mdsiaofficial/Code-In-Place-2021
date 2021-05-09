@@ -7,6 +7,7 @@ def main():
     print("This program subtracts one number from another.")
     user_input1 = float(input("Enter first number: "))
     user_input2 = float(input("Enter second number: "))
-    print("The result is "+user_input1-user_input2)
+    result = user_input1-user_input2
+    print("The result is "+ str(result))
 if __name__ == '__main__':
     main()
