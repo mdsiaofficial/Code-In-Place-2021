@@ -4,6 +4,8 @@ TODO: Write a description here
 
 import random
 cmplt_prgrm = 3
+correct_count=0
+
 def main():
 
     num1 = random.randint(10,99)
@@ -11,10 +13,14 @@ def main():
     sum = num1+num2
     print("What is "+str(num1)+"+"+str(num2)+"?")
     user_input = int(input("Your answer: "))
-    if user_input==sum:
-        print("Correct!")
-    else:
-        print("Incorrect. The expected answer is "+str(sum))
 
+    while correct_count !=cmplt_prgrm:
+        if user_input==sum:
+            print("Correct!")
+            correct_count+=1
+        else:
+            print("Incorrect. The expected answer is "+str(sum))
+    print(Correct! You've gotten 3 correct in a row.')
+    print("Congratulations! You mastered addition.")
 if __name__ == '__main__':
     main()
