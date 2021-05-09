@@ -5,7 +5,9 @@ a random answer from a set of prefabricated responses.
 """
 
 def main():
-    question = input("Ask a Yes No question: ")
-    print("It is certain")
+
+    name = input("Whats your name?")
+
+    print("Hello ", name,"!")
 if __name__ == "__main__":
     main()
