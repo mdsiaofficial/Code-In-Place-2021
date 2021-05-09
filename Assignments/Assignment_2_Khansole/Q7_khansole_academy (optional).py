@@ -22,6 +22,8 @@ def main():
             user_input = int(input("Your answer: "))
         else:
             print("Incorrect. The expected answer is "+str(sum))
+            print("What is " + str(num1) + "+" + str(num2) + "?")
+            user_input = int(input("Your answer: "))
     print(Correct! You've gotten 3 correct in a row.')
     print("Congratulations! You mastered addition.")
 if __name__ == '__main__':
