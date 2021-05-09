@@ -4,13 +4,14 @@ TODO: Write a description here
 
 import random
 cmplt_prgrm = 3
-correct_count=0
+
 
 def main():
 
     num1 = random.randint(10,99)
     num2 = random.randint(10,99)
     sum = num1+num2
+    correct_count = 0
     print("What is "+str(num1)+"+"+str(num2)+"?")
     user_input = int(input("Your answer: "))
 
