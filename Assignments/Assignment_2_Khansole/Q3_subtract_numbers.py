@@ -4,7 +4,9 @@ of the first number minus the second number.
 """
 
 def main():
-    pass
-
+    print("This program subtracts one number from another.")
+    user_input1 = float(input("Enter first number: "))
+    user_input2 = float(input("Enter second number: "))
+    print(user_input2-user_input1)
 if __name__ == '__main__':
     main()
