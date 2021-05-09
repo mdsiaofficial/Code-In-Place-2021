@@ -5,8 +5,5 @@ a random answer from a set of prefabricated responses.
 """
 
 def main():
-    # Fill this function out!
-    pass
-
 if __name__ == "__main__":
     main()
