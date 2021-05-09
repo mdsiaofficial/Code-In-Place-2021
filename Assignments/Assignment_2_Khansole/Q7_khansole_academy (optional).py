@@ -16,6 +16,7 @@ def main():
             correct_count += 1
             print("Correct! You've gotten ",correct_count, "correct in a row.")
         else:
+            correct_count=0
             print("Incorrect. The expected answer is ",sum)
 
         if correct_count==3:
