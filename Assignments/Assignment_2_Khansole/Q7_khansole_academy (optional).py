@@ -15,9 +15,11 @@ def main():
     user_input = int(input("Your answer: "))
 
     while correct_count !=cmplt_prgrm:
-        if user_input==sum:
+        if user_input==sum and correct_count<cmplt_prgrm:
             print("Correct!")
             correct_count+=1
+            print("What is " + str(num1) + "+" + str(num2) + "?")
+            user_input = int(input("Your answer: "))
         else:
             print("Incorrect. The expected answer is "+str(sum))
     print(Correct! You've gotten 3 correct in a row.')
