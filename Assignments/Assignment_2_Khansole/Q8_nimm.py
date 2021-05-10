@@ -13,20 +13,21 @@ The two players continue until the center pile has run out of stones.
 import random
 
 def main():
-    stones = 20
-    player = 1
-    while stones > 0:
-        print("There are " + str(stones) + " stones left")
-        removed_stones = int(input("Player " + str(player) + " would you like to remove 1 or 2 stones? "))
-        while removed_stones != 1 and removed_stones != 2:
-            removed_stones = int(input("Please enter 1 or 2: "))
-        print("")
-        stones -= removed_stones
-        if player == 1:
-            player += 1
+    stones=20
+    player=1
+    while stones>0:
+        print("There are ",stones,"stones left.")
+        removed_stones=int(input("Player " +player+"would you like to remove 1 or 2 stones?"))
+        while removed_stones!=1 and removed_stones!=2:
+            print("Please enter between 1 or 2: ")
+        stones-=removed_stones
+        if player ==1:
+            player+=1
         else:
-            player -= 1
-    print("Player " + str(player) + " wins!")
+            player-=1
+
+
+    print("Player "+player+"wins!")
 
 if __name__ == '__main__':
     main()
