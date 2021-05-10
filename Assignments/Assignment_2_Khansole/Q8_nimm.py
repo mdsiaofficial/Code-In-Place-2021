@@ -18,9 +18,9 @@ def main():
     while stones>0:
         print("There are ",stones,"stones left")
         removed_stones=int(input("Player " +str(player)+" would you like to remove 1 or 2 stones? "))
-
+        print("")
         while removed_stones!=1 and removed_stones!=2:
-            print("\nPlease enter between 1 or 2: ")
+            print("Please enter between 1 or 2: ")
         stones-=removed_stones
         if player ==1:
             player+=1
