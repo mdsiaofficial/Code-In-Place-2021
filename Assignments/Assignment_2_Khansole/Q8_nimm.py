@@ -27,7 +27,7 @@ def main():
             player-=1
 
 
-    print("Player "+str(player)+"wins!")
+    print("Player "+str(player)+" wins!")
 
 if __name__ == '__main__':
     main()
