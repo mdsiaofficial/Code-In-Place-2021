@@ -11,14 +11,15 @@ Continue this process until n is equal to one.
 def main():
     user_input = int(input("Enter a number: "))
 
-    if user_input % 2 == 0:
-        n1 = user_input // 2
-        print(user_input, "is even, so I take half: ", n1)
-        user_input = n1
-    else:
-        n2 = (user_input*3)+1
-        print(user_input, "is odd, so I make 3n+1: ", n2)
-        user_input = n2
+    while user_input != 1
+        if user_input % 2 == 0:
+            n1 = user_input // 2
+            print(user_input, "is even, so I take half: ", n1)
+            user_input = n1
+        else:
+            n2 = (user_input*3)+1
+            print(user_input, "is odd, so I make 3n+1: ", n2)
+            user_input = n2
 
 
 if __name__ == "__main__":
