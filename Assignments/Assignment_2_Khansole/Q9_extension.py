@@ -9,10 +9,14 @@ Continue this process until n is equal to one.
 """
 
 def main():
+    # user will input the first number
     user_input = int(input("Enter a number: "))
+    # it will count how many steps will need to complete the program
     steps = 0
+
+    # Continue this process until n is equal to one
     while user_input != 1:
-        steps += 1
+        steps += 1  # every successful delivery will increase steps
         if user_input % 2 == 0:
             n1 = user_input // 2
             print(user_input, "is even, so I take half: ", n1)
@@ -21,6 +25,7 @@ def main():
             n2 = (user_input*3)+1
             print(user_input, "is odd, so I make 3n+1: ", n2)
             user_input = n2
+
     print("The process took ", steps, "steps to reach 1")
 
 if __name__ == "__main__":
