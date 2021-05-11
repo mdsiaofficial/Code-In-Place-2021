@@ -11,7 +11,7 @@ Continue this process until n is equal to one.
 def main():
     user_input = int(input("Enter a number: "))
 
-    while user_input != 1
+    while user_input != 1:
         if user_input % 2 == 0:
             n1 = user_input // 2
             print(user_input, "is even, so I take half: ", n1)
