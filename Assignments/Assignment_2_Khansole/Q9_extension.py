@@ -12,10 +12,11 @@ def main():
     user_input = int(input("Enter a number: "))
 
     if user_input % 2 == 0:
-        print(user_input, "is even, so I take half: ", user_input //= 2)
+        user_input //= 2
+        print(user_input, "is even, so I take half: ", user_input)
     else:
-
-        print(user_input, "is odd, so I make 3n+1: ", user_input = (user_input*3)+1)
+        user_input = (user_input * 3) + 1
+        print(user_input, "is odd, so I make 3n+1: ", )
 
 
 if __name__ == "__main__":
