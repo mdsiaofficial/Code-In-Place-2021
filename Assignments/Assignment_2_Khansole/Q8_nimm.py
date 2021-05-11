@@ -10,8 +10,6 @@ On a given turn, a player may take either 1 or 2 stone from the center pile.
 The two players continue until the center pile has run out of stones.
 """
 
-import random
-
 def main():
 
     stones=20   # stones that appears before starting game
@@ -29,14 +27,10 @@ def main():
         print("")
 
         stones-=removed_stones
-
-
         if player ==1:
             player+=1
         else:
             player-=1
-
-
     print("Player "+str(player)+" wins!")
 
 if __name__ == '__main__':
