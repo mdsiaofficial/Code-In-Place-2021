@@ -26,11 +26,13 @@ def main():
             removed_stones=int(input("Please enter 1 or 2: "))
         print("")
 
+        # everytime came out from loop it will decrease
         stones-=removed_stones
         if player ==1:
             player+=1
         else:
             player-=1
+
     print("Player "+str(player)+" wins!")
 
 if __name__ == '__main__':
