@@ -10,8 +10,9 @@ Continue this process until n is equal to one.
 
 def main():
     user_input = int(input("Enter a number: "))
-
+    steps = 0
     while user_input != 1:
+        steps += 1
         if user_input % 2 == 0:
             n1 = user_input // 2
             print(user_input, "is even, so I take half: ", n1)
@@ -20,7 +21,7 @@ def main():
             n2 = (user_input*3)+1
             print(user_input, "is odd, so I make 3n+1: ", n2)
             user_input = n2
-
+    print("The process took ", steps, "steps to reach 1")
 
 if __name__ == "__main__":
     main()
