@@ -13,7 +13,7 @@ def main():
 
     if user_input % 2 == 0:
         user_input //= 2
-        print(user_input, "is even, so I take half: ", user_input //= 2)
+        print(user_input, "is even, so I take half: ", user_input = user_input//2)
     else:
 
         print(user_input, "is odd, so I make 3n+1: ", user_input = (user_input*3)+1)
