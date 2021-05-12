@@ -8,13 +8,14 @@ Here is what the output looks like when MAX_NUMBER = 100
 
 
 MAX_NUMBER = 100
-MIN_NUMBER = 1
+
 def main():
-    while MIN_NUMBER <= 100:
+    MIN_NUMBER = 1
+    while MIN_NUMBER <= MAX_NUMBER:
         if MIN_NUMBER % 2 == 0:
-            print(i, "is even")
+            print(MIN_NUMBER, "is even")
         else:
-            print(i, "is odd")
+            print(MIN_NUMBER, "is odd")
         MIN_NUMBER += 1
 
 if __name__ == '__main__':
