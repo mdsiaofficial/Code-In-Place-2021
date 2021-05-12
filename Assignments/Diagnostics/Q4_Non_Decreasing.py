@@ -1,5 +1,9 @@
 """
+Write a program that asks the user to enter a sequence of "non-decreasing" numbers one at a time. Numbers are non-decreasing if each number is greater than or equal to the last.
 
+When the user enters a number which is smaller than their previously entered value, the program is over. Tell the user how long their sequence was.
+
+Here is an example (values entered by the user are bolded and italicized for clarity, but they don't need to be in your program):
 """
 
 def main():
