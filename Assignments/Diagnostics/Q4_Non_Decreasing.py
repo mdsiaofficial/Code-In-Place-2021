@@ -5,7 +5,7 @@
 def main():
     print("Enter a sequence of non-decreasing numbers.")
     value = input("Enter num: ")
-
+    previous_value = value
     sequence_length = 0
     while value >= previous_value:
         sequence_length += 1
