@@ -7,6 +7,7 @@ def main():
         go_to_next_step()
 
 def go_to_next_step():
+    turn_right()
     move()
     move()
     turn_right()
