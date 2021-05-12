@@ -17,7 +17,7 @@ def main():
         print("Correct height to be an astronaut")
     elif height > max_height:
         print("Above maximum astronaut height")
-    elif height < min_height:
+    else:
         print("Below minimum astronaut height")
 
 if __name__ == '__main__':
