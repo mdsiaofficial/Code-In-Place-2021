@@ -13,7 +13,7 @@ Edit this code so that it works correctly
 
 def divide_and_round(n):
     """
-    Divides an integer n by 2 and rounds 
+    Divides an integer n by 2 and rounds
     up to the nearest whole number
     """
     if n % 2 == 0:
