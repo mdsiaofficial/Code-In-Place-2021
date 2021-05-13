@@ -24,6 +24,6 @@ def divide_and_round(n):
         return n
 def main():
     n = 10
-    n = divide_and_round(n)
+    n = int(divide_and_round(n))
     divide_and_round(n)
-    print(n) 
+    print(n)
