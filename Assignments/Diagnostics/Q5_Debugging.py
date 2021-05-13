@@ -26,3 +26,6 @@ def main():
     n = 10
     n = int(divide_and_round(n))
     print(n)
+
+if __name__ == "__main__":
+    main()
