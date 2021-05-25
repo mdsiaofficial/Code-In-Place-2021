@@ -1,61 +1,68 @@
 """
-This program takes an image and generates a reflection.
-The top half of the generated image is the same as the original.
-The bottom half is the mirror reflection of the top half.
+File: reflection.py
+----------------
+Take an image. Generate a new image with twice the height. The top half
+of the image is the same as the original. The bottom half is the mirror
+reflection of the top half.
 """
-import math
 
+
+# The line below imports SimpleImage for use here
+# Its depends on the Pillow package being installed
 from simpleimage import SimpleImage
 
-DEFAULT_FILE = 'images/mt-rainier.jpg'
 
-def make_cool_reflected(filename):
+def make_reflected(filename):
     image = SimpleImage(filename)
-    output = SimpleImage.blank(image.width, image.height * 2)
+    width = image.width
+    height = image.height
 
-    for y in range(image.height):
-        for x in range(image.width):
-            px = image.get_pixel(x, y)
-            # Upper side
-            output.set_pixel(x, y, px)
-            # Reflected pixel from the original image
-            rx = x + (y * 0.1) * math.sin(5000 / (y + 1))
-            ry = image.height - y - 1 + (y * 0.03) * math.sin(x / 30)
-            if rx < 0:
-                rx = 0
-            if rx > image.width - 1:
-                rx = image.width - 1
-            if ry < 0:
-                ry = 0;
-            if ry > image.height - 1:
-                ry = image.height - 1
-            rpx = image.get_pixel(rx, ry)
-            # Color correction
-            opx = output.get_pixel(x, image.height + y)
-            opx.red = 20 + rpx.red * 0.1
-            opx.green = 20 + rpx.green * 0.3
-            opx.blue = 20 + rpx.blue * 0.4
+    reflection = SimpleImage.blank(width, height*2) #canvas for the ori image and reflection
 
-    return output
+    for x in range(width):
+        for y in range(height):
+            pixel = image.get_pixel(x, y)
+            reflection.set_pixel(x, y, pixel)
+            reflection.set_pixel(x, (height*2) - (y + 1), pixel)
+
+
+    return reflection
+
+def darker(image):
+    """
+    Makes image passed in darker by halving red, green, blue values.
+    Note: changes in image persist after function ends.
+    """
+    # Demonstrate looping over all the pixels of an image,
+    # changing each pixel to be half its original intensity.
+    for x in range(1792):
+        for y in range(1115*2):
+            if y >= 1115:
+                pixel = image.get_pixel(x,y)
+                average = (pixel.red + pixel.green + pixel.blue) // 3
+                if average >= 153:
+                    pixel.red = pixel.red//2
+                    pixel.green = pixel.green//2
+                    pixel.blue = pixel.blue//2
+                else:
+                    pixel.red = average
+                    pixel.blue = average
+                    pixel.green = average
+
+
 
 def main():
-    # Get file name from user input
-    filename = get_file()
+    """
+    This program tests your highlight_fires function by displaying
+    the original image of a fire as well as the resulting image
+    from your highlight_fires function.
+    """
+    original = SimpleImage('singapore2.jpg')
 
-    # Show the original image
-    original = SimpleImage(filename)
-    original.show()
+    reflected = make_reflected('singapore2.jpg')
 
-    # Show the reflected image
-    reflected = make_cool_reflected(filename)
+    darker(reflected)
     reflected.show()
-
-def get_file():
-    # Read image file path from user, or use the default file
-    filename = input('Enter image file (or press enter for default): ')
-    if filename == '':
-        filename = DEFAULT_FILE
-    return filename
 
 if __name__ == '__main__':
     main()
