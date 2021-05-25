@@ -2,7 +2,7 @@
 This program generates the Warhol effect based on the original image.
 """
 
-from simpleimage_warhole import SimpleImage
+from simpleimage import SimpleImage
 
 N_ROWS = 2
 N_COLS = 3
