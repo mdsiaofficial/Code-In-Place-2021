@@ -18,9 +18,9 @@ def main():
     # TODO: your code here
     def Code_in_Place_Filter():
         for pixel in image:
-            pixel.red = pixel.red*1.5
-            pixel.blue = pixel.blue*1.5
-            pixel.green = pixel.green*0.7
+            pixel.red = pixel.red * 1.5
+            pixel.blue = pixel.blue * 1.5
+            pixel.green = pixel.green * 0.7
         return image
 
     # Show the image after the transform
