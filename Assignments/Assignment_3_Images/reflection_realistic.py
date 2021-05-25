@@ -46,7 +46,7 @@ def main():
     original.show()
 
     # Show the reflected image
-    reflected = make_reflected(filename)
+    reflected = make_cool_reflected(filename)
     reflected.show()
 
 def get_file():
