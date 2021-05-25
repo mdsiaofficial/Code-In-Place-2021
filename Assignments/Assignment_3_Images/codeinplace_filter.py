@@ -16,20 +16,19 @@ def main():
 
     # Apply the filter
     # TODO: your code here
-    def Code_in_Place_Filter():
+    def code_in_place_filter(image):
         for pixel in image:
             pixel.red = pixel.red * 1.5
             pixel.green = pixel.green * 0.7
             pixel.blue = pixel.blue * 1.5
-
         return image
 
+
     # Show the image after the transform
-    Code_in_Place_Filter(image)
+    code_in_place_filter(image)
     image.show()
 
 def get_file():
-
     # Read image file path from user, or use the default file
     filename = input('Enter image file (or press enter for default): ')
     if filename == '':
