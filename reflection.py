@@ -1,5 +1,5 @@
 """
-File: reflection.py
+File: Q3_reflection.py
 ----------------
 Take an image. Generate a new image with twice the height. The top half
 of the image is the same as the original. The bottom half is the mirror

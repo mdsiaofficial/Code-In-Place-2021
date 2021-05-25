@@ -1,5 +1,5 @@
 """
-File: codeinplace_filter.py
+File: Q1_codeinplace_filter.py
 ----------------
 This program implements a rad image filter.
 """
