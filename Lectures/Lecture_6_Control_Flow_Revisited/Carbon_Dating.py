@@ -1,5 +1,5 @@
 import math
-K = -8266.64
+K = -8266.64258429376
 
 def main():
     calculate_age_single_sample()
